@@ -101,6 +101,13 @@ class User
                 'password' => '$2y$10$vQvuFc6vQQyon0IawbmUN.3cPBXmuaZYsVww5csFRLvLCLPTiYwMa', // testss
                 'role' => $test
             ],
+            [
+                'id' => 5,
+                'name' => 'Max Chernyshov',
+                'login' => 'student',
+                'password' => '$2a$10$rjWxenWa9jPpPcGo.zXVcuWE.Afz83lnFSIrP3kUzVmJ3nYSbO2DW', // student
+                'role' => $user
+            ]
         ];
 
         if (!count($search)) {
