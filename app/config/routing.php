@@ -22,6 +22,10 @@ $routes->add(
     new Route('/product/info/{id}', ['_controller' => [ProductController::class, 'infoAction']])
 );
 $routes->add(
+    'course_description',
+    new Route('/product/course_description', ['_controller' => [ProductController::class, 'courseDescriptionAction']])
+);
+$routes->add(
     'product_into_social_network',
     new Route('/product/social/{network}', ['_controller' => [ProductController::class, 'postAction']])
 );
