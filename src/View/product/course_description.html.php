@@ -19,6 +19,7 @@ $body = function () use ($productList, $path) {
                 <td style="text-align: center">
                     <a href="<?= $path('product_info', ['id' => $product->getId()]) ?>"><?= $product->getName() ?></a>
                     <br /><br />
+                    <h1><?= $product->getDescription() ?></h1>
                     <?= $product->getPrice() ?> руб.
                 </td>
 <?php

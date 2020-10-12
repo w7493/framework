@@ -71,4 +71,10 @@ class ProductController
 
         return $this->redirect('product_info', ['id' => $request->query->get('page_num', 1)]);
     }
+    public function courseDescriptionAction(Request $request): Response
+    {
+    $productList = (new Product())->getAll($request->query->get('sort', ''));
+
+    return $this->render('product/course_description.html.php', ['productList' => $productList]);
+    }
 }
